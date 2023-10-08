@@ -70,7 +70,7 @@ function addFSDA2path(FSroot)
         addFSDA2path(fileparts(which('docsearchFS.m')))
 %}
 
-%% Beginning of MATLAB code... 
+%% Beginning of CODE
 
 if nargin<1
     FSroot= fileparts(which('docsearchFS.m'));
