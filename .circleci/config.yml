@@ -1,45 +1,26 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.  See: https://circleci.com/docs/2.0/configuration-reference
+# Use the latest 2.1 version of CircleCI pipeline process engine.
+# See: https://circleci.com/docs/configuration-reference
 version: 2.1
-# Use a package of configuration called an orb.  
-orbs:
-  # Declare a dependency on the MATLAB-orb
-  matlab: mathworks/matlab@dev:v1-beta # beta orb version
+
+# Define a job to be invoked later in a workflow.
+# See: https://circleci.com/docs/configuration-reference/#jobs
 jobs:
-# Name the job "testing"
-  testing:
-  # define q: parameter; used inside the jobs: to segment the tests to overcome the 50 minutes limit.
-     parameters:
-      q:
-         default: "regression"
-         type: string      
-     environment:
-       CATEGORY_TO_TEST: << parameters.q >>  # setup a parametric environment variable to be used by MATLAB testing script "runAllMyTestsFS.m"
-     machine:
-         image: ubuntu-2004:202201-02
-     steps:
-        - checkout
-        - matlab/install:
-            release: R2023a
-            products: |
-              MATLAB
-              Optimization_Toolbox
-              Statistics_and_Machine_Learning_Toolbox
-              Parallel_Computing_Toolbox 
-        - matlab/run-command:                   # previously `matlab -batch ...`   
-            command:  
-              "run runAllMyTestsFS.m"    # run the testing script: the environment variable can be retrieved using 'var=getenv('CATEGORY_TO_TEST');'
-        - store_test_results:
-            path: ~/project/tests-<< parameters.q >>/test-<< parameters.q >>-report/
+  say-hello:
+    # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
+    # See: https://circleci.com/docs/configuration-reference/#executor-job
+    docker:
+      - image: cimg/base:stable
+    # Add steps to the job
+    # See: https://circleci.com/docs/configuration-reference/#steps
+    steps:
+      - checkout
+      - run:
+          name: "Say hello"
+          command: "echo Hello, World!"
 
-# Orchestrate or schedule a set of jobs
+# Orchestrate jobs using workflows
+# See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
-  # Name of the workflow 
-  fsdatoolbox:
-    # Run the "testing" job defined earlier in its own container
+  say-hello-workflow:
     jobs:
-      - testing:
-      # Define a matrix of parameter values to be passed iteratively to the "testing" job
-          matrix:
-             parameters:
-                  q: ["regression", "regressionTS", "regressionLTSts", "regressionEXT", "graphics", "multivariate", "multivariate-clustering", "regression-clustering", "mixsim", "utilities", "tclustMULT", "tclustMULTgpcm"]
-
+      - say-hello
