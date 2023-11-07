@@ -139,7 +139,7 @@ options.MinimumMatlabRelease = 'R2018a';
 options.MaximumMatlabRelease = '';
 
 % add big logo
-options.ToolboxImageFile = fullfile(FSDAroot, "logoblue.jpg");
+options.ToolboxImageFile = fullfile(FSDAroot, "images", "logoblue.jpg");
 
 % add getting startup file
 options.ToolboxGettingStartedGuide = fullfile(FSDAroot, 'doc', 'GettingStarted.mlx');

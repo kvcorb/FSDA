@@ -88,7 +88,7 @@ For a preview see [http://rosa.unipr.it/fsda_video.html](http://rosa.unipr.it/fs
    
 
 
-# Installation Notes
+# Installing the toolbox
 
 The installation procedure of FSDA relies on a setup executable (or
 Linux bash script) which should execute all the necessary steps
