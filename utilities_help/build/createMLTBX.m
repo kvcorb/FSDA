@@ -57,6 +57,7 @@ options = removeFoldersFromToolboxPackage(options, [ ...
 
 % Secondly there are a set of files in this repository that we do not want
 % in the packaged toolbox - remove those using a helper function
+% some of them to be discussed with Bensingh snd Rob
 options = removeFilesFromToolboxPackage(options, [...
     ".gitattributes"
     ".gitignore"
@@ -99,7 +100,9 @@ pathsToAdd = [ ...
     "utilities_stat"
     "utilities_help"
     "toolbox" + fsep + "examples"
-    "FSDAdemos"    
+    "toolbox" + fsep + "FSDAdemos"    
+    "toolbox" + fsep + "apps"    
+    "toolbox" + fsep + "helpfiles"    
     ];
 
 % AND NOTE scalar expansion here with vector of pathsToAdd
