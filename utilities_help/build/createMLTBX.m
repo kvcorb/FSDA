@@ -101,7 +101,7 @@ pathsToAdd = [ ...
     "utilities"
     "utilities_stat"
     "utilities_help"
-    "examples"
+    "toolbox" + fsep + "examples"
     "FSDAdemos"    
     ];
 
