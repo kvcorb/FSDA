@@ -108,8 +108,7 @@ main root where MATLAB is installed. For example, if you have release
 is necessary that our documentation files are inside C:\\program
 files\\MATLAB\\R2017a\\help
 
-![](./images/image1.png){width="4.125357611548557in"
-height="2.891917104111986in"}
+![](./images/image1.png)
 
 Our SETUP should automatically put our html files inside the appropriate
 MATLAB folder. If, due to restrictions on user permissions this was not
@@ -176,8 +175,7 @@ b.  Manually by unpacking the compressed tar file FSDA.tar.gz under a
     (see 2b) as follows (now assuming a MS Windows platform installation
     under D:\\programs\\FSDA):
 
-![](./images/image2.png){width="3.5520833333333335in"
-height="0.20833333333333334in"}
+![](./images/image2.png)
 
 4.  If FSDA has been installed properly (in what follows without loss of
     generality we assume, for example, that FSDA has been installed in
@@ -186,27 +184,24 @@ height="0.20833333333333334in"}
     (the last three being introduced with FSDA V3.0 (i.e. starting with
     MATLAB R2015a).
 
-![](./images/image3.png){width="6.889583333333333in" height="3.89375in"}
+![](./images/image3.png)
 
 5.  If FSDA is installed in MATLAB R2012b or subsequent releases, three
     APPS (brushRES, brushFAN and brushROB) are automatically installed:
 
-![](./images/image4.png){width="5.896561679790026in"
-height="1.1978062117235346in"}
+![](./images/image4.png)
 
 Remark: if the three APPS have not been automatically installed, you can
 easily install them manually by double clicking on the files
 brushFAN.mlappinstall, brushRES.mlappinstall and brushROB.mlappinstall
 contained in the root folder of FSDA.
 
-![](./images/image5.png){width="5.684708005249344in"
-height="1.3343591426071741in"}
+![](./images/image5.png)
 
 If FSDA is installed in MATLAB 2012a or earlier the three APPS appear
 inside MATLAB Start button\|Toolboxes\|FSDA.
 
-![](./images/image6.png){width="6.6930555555555555in"
-height="3.474724409448819in"}
+![](./images/image6.png)
 
 > These APPS are graphical user interfaces conceived to demonstrate some
 > functionalities of FSDA.
@@ -216,8 +211,7 @@ height="3.474724409448819in"}
     **FSDA uninstall program** that should be used by the user to remove
     an obsolete FSDA release, before an update:
 
-![](./images/image7.png){width="3.3656714785651793in"
-height="2.5670384951881013in"}
+![](./images/image7.png)
 
 7.  Nonetheless, to avoid problems that may occur if FSDA is installed
     with our setup program more than once, the setup program tries to
@@ -230,8 +224,7 @@ height="2.5670384951881013in"}
 
     a.  **The MATLAB "Help" pages should include FSDA**, as shown below:
 
-![](./images/image8.png){width="6.6930555555555555in"
-height="3.1416666666666666in"}
+![](./images/image8.png)
 
 b.  **With the setup installer, three example files named
     "examples_regression.m", "examples_multivariate.m", and
@@ -242,133 +235,112 @@ b.  **With the setup installer, three example files named
     (these two files are contained in (main folder of
     FSDA)\\examples)**.**
 
-> ![](./images/image9.png){width="3.21in" height="3.65in"}
+> ![](./images/image9.png)
 
 c.  **FSDA should appear among the installed "Toolboxes" in the MATLAB
     "Start Menu" (only for MATLAB releases before R2012b)**
 
-![](./images/image10.png){width="5.891159230096238in"
-height="2.1431813210848643in"}
+![](./images/image10.png)
 
 d.  **For MATLAB R2012b to R2014b installations, the html help files can
     be found in the Supplemental Software tab** which appears at the
     bottom of the Doc Center home page (see screenshot below)**.**
 
-![](./images/image11.png){width="6.458333333333333in"
-height="2.627083333333333in"}
+![](./images/image11.png)
 
 **For MATLAB 2015a-2016b installations, the html help files can be found
 in the Supplemental Software link**, (see screenshot below)
 
 **Screenshot for MATLAB 2016b**
 
-![](./images/image12.png){width="6.889583333333333in"
-height="3.6145833333333335in"}
+![](./images/image12.png)
 
 **Screenshot for MATLAB 2017a-2018a**
 
-![](./images/image13.png){width="6.889583333333333in"
-height="3.2381944444444444in"}
+![](./images/image13.png)
 
 **Screenshot for MATLAB 2019a**
 
-![](./images/image14.png){width="6.889583333333333in"
-height="5.430555555555555in"}
+![](./images/image14.png)
 
 e.  **For MATLAB installations earlier than 2012b, the documentation is
     located in the same place as all the other official Mathworks
     toolboxes** (see bottom panel of screenshot below):
 
-![](./images/image15.png){width="2.251388888888889in"
-height="2.161111111111111in"}
+![](./images/image15.png)
 
 Independently from MATLAB version you use, once you click on the link
 FSDA Toolbox you should reach our main documentation page (see
 screenshot below)
 
-![](./images/image8.png){width="6.6930555555555555in"
-height="2.3256878827646545in"}
+![](./images/image8.png)
 
 Remark: you can reach our main documentation page also simply typing
 docsearchFS in the command prompt
 
-![](./images/image16.png){width="2.1335181539807526in"
-height="0.3083595800524934in"}
+![](./images/image16.png)
 
 From our main documentation page you can go to the Examples page (see
 screenshot below),
 
-![](./images/image17.png){width="6.430214348206474in"
-height="2.769659886264217in"}
+![](./images/image17.png)
 
 where you can find GUIs, example codes (see screenshot below),
 
-![](./images/image18.png){width="6.889583333333333in"
-height="3.172222222222222in"}
+![](./images/image18.png)
 
 and links to videos containing the analysis of selected examples (see
 screenshot below).
 
-![](./images/image19.png){width="6.410653980752406in"
-height="3.0983814523184603in"}
+![](./images/image19.png)
 
 From any point of our documentation system you can go to the "Tutorials"
 page (see screenshot below)
 
-![](./images/image20.png){width="3.688073053368329in"
-height="1.7706419510061242in"}
+![](./images/image20.png)
 
 where you can find several tutorials about robust statistics and dynamic
 statistical visualization, transformations.... (see screenshot below).
 
-![](./images/image21.png){width="6.383333333333334in" height="7.325in"}
+![](./images/image21.png)
 
 On the other hand, if from the left menu one clicks on "Functions and
 Other References" (see screenshot above), it is possible to get the
 categorical list of functions present in the toolbox (see screenshot
 below).
 
-![](./images/image22.png){width="6.889583333333333in"
-height="3.5215277777777776in"}
+![](./images/image22.png)
 
 Of course clicking on the button
-![](./images/image23.png){width="2.223526902887139in"
-height="0.33088145231846017in"} it is possible to browse in alphabetical
+![](./images/image23.png) it is possible to browse in alphabetical
 order the documentation of the 210 functions present inside the FSDA
 toolbox (see screenshot below).
 
-![](./images/image24.png){width="6.889583333333333in"
-height="2.902083333333333in"}
+![](./images/image24.png)
 
 By clicking on one of these links (for example on tclust, see screenshot
 above) it is possible to reach the HTML documentation of the function in
 a perfect new MATLAB documentation style (see screenshot below).
 
-![](./images/image25.png){width="6.889583333333333in"
-height="2.995833333333333in"}
-
+![](./images/image25.png)
 These HTML documentation pages have been created automatically by our
 routines publishFS. Every HTML documentation contains a series of
 **Examples** and Related Examples.
 
-The icon ![](./images/image26.png){width="0.3666983814523185in"
-height="0.3416961942257218in"} at the beginning of the line, indicates
+The icon ![](./images/image26.png) at the beginning of the line, indicates
 that the associated example has been executed and its output has been
 captured inside the HTML file. For example, if you click on the first of
 the Related Examples (see screenshot below),
 
-![](./images/image27.png){width="4.3059951881014875in"
-height="1.0693886701662292in"}
+![](./images/image27.png)
 
 it is possible to see both the code (note that the code is displayed
 inside HTML using typical Matlab colouring) and the output which was
 generated (see the two screenshots below).
 
-![](./images/image28.png){width="6.469152449693788in"
-height="4.100307305336833in"}
+![](./images/image28.png)
 
-![](./images/image29.png){width="6.483719378827646in"
-height="4.561525590551181in"}
+![](./images/image29.png)
 
 In the More About section of our HTML files (see screenshot below), it
 is possible find the theoretical background which accompanies a
@@ -377,8 +349,7 @@ particular function.
 For example, the screenshot below shows what you get in the case of
 function tclust.
 
-![](./images/image30.png){width="5.683825459317585in"
-height="3.3752919947506563in"}
+![](./images/image30.png)
 
 Remark: there is a one to one correspondence between the documentation
 contained inside the .m file and the corresponding .html file.
@@ -389,53 +360,46 @@ command prompt typing help and the name of the function.
 For example, the screenshot below shows what you get if you type in the
 prompt "help MixSim".
 
-![](./images/image31.png){width="6.535715223097113in"
-height="4.35119094488189in"}
+![](./images/image31.png)
 
 Sometimes inside the .m file (especially in the section "More About") we
 have added a number of formulae in latex language (see screenshot
 below).
 
-![](./images/image32.png){width="6.889583333333333in"
-height="3.9520833333333334in"}
+![](./images/image32.png)
 
 Clearly all these latex formulae will show up correctly (thanks to
 MathJax technology) in the corresponding HTML help page. For example, in
 the case of MixSim function, in the command window, by clicking on the
 link "Link to the help function",
 
-![](./images/image33.png){width="6.392857611548556in"
-height="0.8452384076990376in"}
+![](./images/image33.png)
 
 one is redirected to the corresponding HTML documentation page. Here, in
 the "More About" section it is possible to see the code in proper
 mathematical style.
 
-![](./images/image34.png){width="6.394029965004375in"
-height="2.5728226159230094in"}
+![](./images/image34.png)
 
 Finally, it is worthwhile to remark that it is possible to go directly
 to the HTML documentation page simply typing docsearchFS and the name of
 the requested function. For example, in the case of tclust to reach file
 tclust.html it is possible to type:
 
-![](./images/image35.png){width="3.816996937882765in"
-height="0.4417049431321085in"}
+![](./images/image35.png)
 
 Generally, the output of our functions is a structure, which contains
 several fields, documented in detail inside the initial part of the .m
 function. For example, in the case of tclust inside tclust.m it is
 possible to navigate to section Output(see screenshot below):
 
-![](./images/image36.png){width="6.494508967629046in"
-height="4.457389545056868in"}
+![](./images/image36.png)
 
 In the corresponding HTML file our parser publishFS.m puts all the
 fields of input and output structure inside a HTML table (see screenshot
 below):
 
-![](./images/image37.png){width="6.462652012248469in"
-height="3.7057294400699914in"}
+![](./images/image37.png)
 
 Every subfolder of FSDA contains file contents.m (automatically created
 by our routine makecontentsfileFS.m) which contains a series of detailed
@@ -444,15 +408,13 @@ corresponding HTML documentation. For example, the screenshot referred
 to the left part of file contents.m inside subfolder "utilities" is
 given below.
 
-![](./images/image38.png){width="6.889583333333333in"
-height="3.920138888888889in"}
+![](./images/image38.png)
 
 Similarly, inside the main root of FSDA file contents.m lists in
 alphabetical order all files present in all subfolders of FSDA, which
 have the corresponding HTML page (see screenshot below):
 
-![](./images/image39.png){width="6.889583333333333in"
-height="3.720138888888889in"}
+![](./images/image39.png)
 
 ## FSDA html documentation files and MATLAB search engine
 
@@ -468,8 +430,7 @@ example, typing tclust you should automatically have the search
 suggestion from the drop down menu which automatically appears (see
 screenshot below)
 
-![](./images/image40.png){width="6.889583333333333in"
-height="1.6506944444444445in"}
+![](./images/image40.png)
 
 and you should be brought directly to the tclust documentation page.
 
@@ -477,36 +438,28 @@ If, for example, you type "concentration step" and you do Refine by
 Product and select the FSDA toolbox these are the three instances you
 should get.
 
-![](./images/image41.png){width="6.889583333333333in"
-height="2.4895833333333335in"}
+![](./images/image41.png)
 
 If you put your mouse on the word restreigen you can see from the status
 bar that the function is located inside (main FSDA
 folder)/helpfiles/pointersHTML, (screenshot of status bar is given
 below):
 
-![](./images/image42.png){width="6.4338910761154855in"
-height="0.2000174978127734in"}
-
+![](./images/image42.png)
 Once you click on restreigen you can go to page restreigen.html (see
 screenshot below) which is located inside docrootFS/FSDA.
 
-![](./images/image43.png){width="6.889583333333333in"
-height="5.425694444444445in"}
+![](./images/image43.png)
 
 From the toolstrip on top you will notice that two instances of
 restreigen have been opened.
-![](./images/image44.png){width="1.665148731408574in"
-height="0.5058683289588801in"}
-
+![](./images/image44.png)
 The first on the left is the page which has been indexed by MATLAB
 search engine which is located inside
 
 (main FSDA folder)/helpfiles/pointersHTML (see screenshot below):
 
-![](./images/image45.png){width="7.045886920384952in"
-height="2.6312893700787403in"}
-
+![](./images/image45.png)
 All these syllabus pages have been automatically created by our routine
 createFSDAhelp.m. It was necessary to have the intermediate pages
 because MATLAB forces these pages to be opened on the iframe on the
@@ -520,20 +473,17 @@ If your version of MATLAB is between 2012b-2014b, it is necessary to use
 the old MATLAB search engine inside supplemental software (see
 screenshot below),
 
-![](./images/image46.png){width="5.808836395450569in"
-height="1.9251673228346458in"}
+![](./images/image46.png)
 
 also, in this case, passing through the syllabus page contained in (FSDA
 root)\\helpfiles\\pointersHTML.
 
-![](./images/image47.png){width="6.889583333333333in"
-height="1.9402777777777778in"}
+![](./images/image47.png)
 
 It is possible to automatically reach our page LXS.html contained inside
 docroot/FSDA.
 
-![](./images/image48.png){width="6.889583333333333in"
-height="2.8291666666666666in"}
+![](./images/image48.png)
 
 ### MATLAB \<=2012a
 
@@ -542,14 +492,12 @@ MATLAB toolboxes and third parties toolboxes (as concerns the
 documentation), therefore it is possible to search directly from the
 unique official MATLAB engine. For example searching for LXS,
 
-![](./images/image49.png){width="6.889583333333333in"
-height="1.6236111111111111in"}
-
+![](./images/image49.png)
 the output of the search is again the syllabus page which automatically
 redirects to the true HTML page (both are shown in the screenshot
 below):
 
-![](./images/image50.png){width="6.889583333333333in" height="3.29375in"}
+![](./images/image50.png)
 
 Remark 1: note that the old MATLAB browser enables us to see correctly
 just 95% of the javascripts which characterize the new MATLAB help
@@ -565,8 +513,7 @@ that the MATLAB Help Browser is not producing proper search results for
 FSDA functions, check first that in the MATLAB Help Preferences FSDA is
 selected, as shown in Figure below:
 
-> ![](./images/image51.JPG){width="4.707291119860018in"
-> height="2.7761198600174977in"}
+> ![](./images/image51.JPG)
 
 Remark 4: **From MATLAB R2015a,** **when you search for a given third
 party function** **for the first time**, the search results window will
@@ -575,21 +522,18 @@ have the proper documentation index file. The window and message
 produced when attempting to search for documentation about \`FSR'
 function, are shown here:
 
-![](./images/image52.png){width="6.6930555555555555in"
-height="1.5277449693788276in"}
+![](./images/image52.png)
 
 > Only after clicking on the Build Index button you should start getting
 > the desired documentation. You will be informed of the successful
 > update of the search database with this message:
 >
-> ![](./images/image53.png){width="6.6930555555555555in"
-> height="0.2870363079615048in"}
+> ![](./images/image53.png)
 >
 > **If,** instead of this message and instead of receiving back the
 > desired results, **you receive an error message** such as this one
 
-![](./images/image54.png){width="4.750411198600175in"
-height="0.3057163167104112in"}
+![](./images/image54.png)
 
 > again it is likely that you have installed FSDA in a location without
 > proper permissions and, thus, the index building operation (i.e. the
@@ -598,19 +542,16 @@ height="0.3057163167104112in"}
 > change location for FSDA. What you should get if the search is
 > successful, is something like the following:
 
-![](./images/image55.png){width="6.185376202974628in"
-height="1.5094892825896762in"}
+![](./images/image55.png)
 
 Therefore, if by some obscure reason you cannot find our HTML files
 using old or new (lucene) engine, it might be necessary to run again
 buildocsearchdb. For example assuming that FSDA main folder is
 D:\\PACKAGES\\FSDA, then it is necessary to run:
 
-![](./images/image56.png){width="6.889583333333333in"
-height="0.6375in"}If you think that something not described in these
-notes went wrong
-
-please do not hesitate to send an e-mail to
+![](./images/image56.png)
+If you think that something not described in these
+notes went wrong please do not hesitate to send an e-mail to
 
 <FSDA@unipr.it>
 
