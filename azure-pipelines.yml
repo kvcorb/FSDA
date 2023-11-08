@@ -55,11 +55,9 @@ jobs:
           Optimization_Toolbox
     - task: RunMATLABCommand@0 
       inputs:
-        command: 
-               - |
-                 cd toolbox
-                 run runAllMyTestsFS.m
- 
+        command: |
+         cd toolbox
+         run runAllMyTestsFS.m
     - task: PublishTestResults@2
       condition: succeededOrFailed()
       inputs:
