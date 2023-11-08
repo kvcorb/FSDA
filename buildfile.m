@@ -22,6 +22,7 @@ arguments
     cat2test char = getenv('CATEGORY_TO_TEST')
     options.Performance (1,1) logical = false
 end
+cd toolbox
 runAllMyTestsFS(cat2test, Performance=options.Performance)
 end
 
