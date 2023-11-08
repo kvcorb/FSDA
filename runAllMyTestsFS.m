@@ -5,6 +5,7 @@ arguments
 end
 %% Load necessary elements for performance test
 % load OUT
+cd toolbox
 run addFSDA2path
 FileName='addFSDA2path';
 FullPath=which(FileName);
