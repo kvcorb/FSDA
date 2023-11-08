@@ -69,7 +69,7 @@ jobs:
     - task: PublishPipelineArtifact@1
       condition: always()
       inputs:
-        path: $(System.DefaultWorkingDirectory)/tests-$(categoryName)
+        path: $(System.DefaultWorkingDirectory)/toolbox/tests-$(categoryName)
         artifact: Test-$(categoryName)
     - task: PublishCodeCoverageResults@1
       condition: succeededOrFailed()
