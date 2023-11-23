@@ -127,7 +127,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./bin/FSDA.mltbx
+          asset_path: ./toolbox/bin/FSDA.mltbx
           asset_name: FSDA.mltbx
           asset_content_type: application/gzip
       
