@@ -93,7 +93,7 @@ options = removeFilesFromToolboxPackage(options, [...
 % NOTE - we need the root as well as some sub-folders so include the empty
 % string at the beginning
 % IMPORTANT - the folders must be added in a bottom-up style, starting from 
-% the subfolder, failute to do so results in an exception.
+% the subfolder, failure to do so results in an exception.
 pathsToAdd = [ ...
     ""
     "multivariate"
@@ -111,12 +111,12 @@ pathsToAdd = [ ...
     "examples"
     "FSDAdemos"    
     "apps"    
-    "helpfiles" + fsep + "FSDA"
-    "helpfiles" + fsep + "includes" + fsep + "product" + fsep + "css"
-    "helpfiles" + fsep + "includes" + fsep + "product" + fsep + "fonts"
-    "helpfiles" + fsep + "includes" + fsep + "product" + fsep + "scripts"
-    "helpfiles" + fsep + "includes" + fsep + "shared"+ fsep + "scripts"
-    "helpfiles" + fsep + "pointersHTML"
+    % "helpfiles" + fsep + "FSDA"
+    % "helpfiles" + fsep + "includes" + fsep + "product" + fsep + "css"
+    % "helpfiles" + fsep + "includes" + fsep + "product" + fsep + "fonts"
+    % "helpfiles" + fsep + "includes" + fsep + "product" + fsep + "scripts"
+    % "helpfiles" + fsep + "includes" + fsep + "shared" + fsep + "scripts"
+    % "helpfiles" + fsep + "pointersHTML"
     ];
 
 % AND NOTE scalar expansion here with vector of pathsToAdd
