@@ -3,7 +3,8 @@ function plan = buildfile
 plan = buildplan(localfunctions);
 
 % Build doc before packaging toolbox as it is needed in the toolbox
-plan("toolbox").Dependencies = "doc";
+% removed for testing !!!!!
+% plan("toolbox").Dependencies = "doc";
 
 % Make the "toolbox" task the default task in the plan
 plan.DefaultTasks = "toolbox";
@@ -36,7 +37,7 @@ end
 function toolboxTask(context)
 % This task packages the toolbox MLTBX file - the expected output will be
 % in the ./bin/ folder (defined in the createMLTBX file)
-cleanup = iCdWithRevert(fullfile(context.Plan.RootFolder, "utilities_help", "build")); %#ok<NASGU>
+cleanup = iCdWithRevert(fullfile(context.Plan.RootFolder, "toolbox", "utilities_help", "build")); %#ok<NASGU>
 createMLTBX
 end
 

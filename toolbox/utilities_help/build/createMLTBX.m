@@ -17,6 +17,11 @@ end
 % object goes out of scope
 [FSDAroot, cleanup] = changeDirToRootWithCleanup; %#ok<ASGLU>
 
+% create realFSDAroot that points to the rela root of FSDA
+% and not ot the FSDA/toolbox folder
+tmp=split(FSDAroot,"/");
+realFSDAroot=join(tmp(1:end-1,1), "/");
+
 % Get filesep
 fsep=filesep;
 
@@ -36,6 +41,8 @@ publish('Contents.m');
 %   exclude those that are not needed below using some helpers.
 
 uuid = '20669fbc-61ca-4050-bc87-575422f4c0b8';
+uuid = 'd6e027ff-e27e-448a-aa53-ef8f1ba4b647';
+
 options = matlab.addons.toolbox.ToolboxOptions(FSDAroot, uuid);
 
 % Firstly there are a set of folders in this repository that we do not want
@@ -85,31 +92,38 @@ options = removeFilesFromToolboxPackage(options, [...
 % Define the paths that we want to add to an installed MATLAB path
 % NOTE - we need the root as well as some sub-folders so include the empty
 % string at the beginning
+% IMPORTANT - the folders must be added in a bottom-up style, starting from 
+% the subfolder, failute to do so results in an exception.
 pathsToAdd = [ ...
     ""
-    "toolbox" + fsep + "multivariate"
-    "toolbox" + fsep + "regression"
-    "toolbox" + fsep + "clustering"
-    "toolbox" + fsep + "graphics"
-    "toolbox" + fsep + "datasets" + fsep + "regression"
-    "toolbox" + fsep + "datasets" + fsep + "multivariate"
-    "toolbox" + fsep + "datasets" + fsep + "multivariate_regression"
-    "toolbox" + fsep + "datasets" + fsep + "clustering"
-    "toolbox" + fsep + "combinatorial"
+    "multivariate"
+    "regression"
+    "clustering"
+    "graphics"
+    "datasets" + fsep + "regression"
+    "datasets" + fsep + "multivariate"
+    "datasets" + fsep + "multivariate_regression"
+    "datasets" + fsep + "clustering"
+    "combinatorial"
     "utilities"
     "utilities_stat"
     "utilities_help"
-    "toolbox" + fsep + "examples"
-    "toolbox" + fsep + "FSDAdemos"    
-    "toolbox" + fsep + "apps"    
-    "toolbox" + fsep + "helpfiles"    
+    "examples"
+    "FSDAdemos"    
+    "apps"    
+    "helpfiles" + fsep + "FSDA"
+    "helpfiles" + fsep + "includes" + fsep + "product" + fsep + "css"
+    "helpfiles" + fsep + "includes" + fsep + "product" + fsep + "fonts"
+    "helpfiles" + fsep + "includes" + fsep + "product" + fsep + "scripts"
+    "helpfiles" + fsep + "includes" + fsep + "shared"+ fsep + "scripts"
+    "helpfiles" + fsep + "pointersHTML"
     ];
 
 % AND NOTE scalar expansion here with vector of pathsToAdd
-options.ToolboxMatlabPath = FSDAroot + fsep + pathsToAdd;
+ options.ToolboxMatlabPath = FSDAroot + fsep + pathsToAdd;
 
 % Define our TOOLBOX name, version and other metadata
-options.ToolboxName = "FSDA";
+options.ToolboxName = "FSDAtest";
 
 options.ToolboxVersion = newVersion;
 
@@ -139,7 +153,7 @@ options.MinimumMatlabRelease = 'R2018a';
 options.MaximumMatlabRelease = '';
 
 % add big logo
-options.ToolboxImageFile = fullfile(FSDAroot, "images", "logoblue.jpg");
+options.ToolboxImageFile = fullfile(realFSDAroot, "images", "logoblue.jpg");
 
 % add getting startup file
 options.ToolboxGettingStartedGuide = fullfile(FSDAroot, 'doc', 'GettingStarted.mlx');
@@ -148,7 +162,7 @@ options.ToolboxGettingStartedGuide = fullfile(FSDAroot, 'doc', 'GettingStarted.m
 options.AppGalleryFiles=[];
 
 mkdir(FSDAroot, 'bin')
-options.OutputFile = fullfile(FSDAroot, "bin", "FSDA");
+options.OutputFile = fullfile(FSDAroot, "bin", "FSDAtest");
 
 % Display the options during build in case the github action fails and we
 % need some debugging output.
