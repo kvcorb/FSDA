@@ -39,7 +39,7 @@ jobs:
       - name: Build docseach db with MATLAB
         uses: matlab-actions/run-command@v1
         with:
-          command: "cd('utilities_help/build'); buildDocSearchForToolboxPre22a()"  
+          command: "cd('toolbox/utilities_help/build'); buildDocSearchForToolboxPre22a()"  
       
       # Finally keep a copy of the artifacts generated for the next job to download    
       - name: Upload helpsearch-v3
