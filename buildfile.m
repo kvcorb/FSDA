@@ -4,7 +4,7 @@ plan = buildplan(localfunctions);
 
 % Build doc before packaging toolbox as it is needed in the toolbox
 % removed for testing !!!!!
-% plan("toolbox").Dependencies = "doc";
+plan("toolbox").Dependencies = "doc";
 
 % Make the "toolbox" task the default task in the plan
 plan.DefaultTasks = "toolbox";
@@ -30,7 +30,7 @@ end
 function docTask(context)
 % This task builds the doc search DB for the current version of MATLAB - the
 % expected output will be in the folder ./helpfiles/pointersHTML
-cleanup = iCdWithRevert(fullfile(context.Plan.RootFolder, "utilities_help", "build")); %#ok<NASGU>
+cleanup = iCdWithRevert(fullfile(context.Plan.RootFolder, "toolbox", "utilities_help", "build")); %#ok<NASGU>
 buildDocSearchForToolbox
 end
 
@@ -44,6 +44,7 @@ end
 function releaseToGithubTask(~, opts)
 % This task tags a new release and builds the toolbox MLTBX file -on GitHub-
 % This task uses createMLTBX.m and GiHub Actions 
+% e.g. buildtool releaseToGithub(Version="1.1.22",Comment="do not use just a test")
 arguments
     ~
     opts.Version(1,1) string = ""
