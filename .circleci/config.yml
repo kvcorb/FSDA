@@ -26,7 +26,7 @@ jobs:
          #     Statistics_and_Machine_Learning_Toolbox
          #     Parallel_Computing_Toolbox 
         - matlab/run-command:                   # previously `matlab -batch ...`   
-           command:  "./toolbox/runAllMyTestsFS.m"    # run the testing script: the environment variable can be retrieved using 'var=getenv('CATEGORY_TO_TEST');'
+           command:  "run ./toolbox/runAllMyTestsFS.m"    # run the testing script: the environment variable can be retrieved using 'var=getenv('CATEGORY_TO_TEST');'
         #- matlab/run-build:
         #    tasks: test
         - store_test_results:
