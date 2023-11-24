@@ -162,7 +162,7 @@ options.ToolboxGettingStartedGuide = fullfile(FSDAroot, 'doc', 'GettingStarted.m
 options.AppGalleryFiles=[];
 
 mkdir(FSDAroot, 'bin')
-options.OutputFile = fullfile(FSDAroot, "bin", "FSDAtest");
+options.OutputFile = fullfile(FSDAroot, "bin", "FSDA");
 
 % Display the options during build in case the github action fails and we
 % need some debugging output.
