@@ -3,7 +3,7 @@ version: 2.1
 # Use a package of configuration called an orb.  
 orbs:
   # Declare a dependency on the MATLAB-orb
-  matlab: mathworks/matlab@0.12.0 # latest orb version
+  matlab: mathworks/matlab@0 # latest orb version
 jobs:
 # Name the job "testing"
   testing:
@@ -18,17 +18,17 @@ jobs:
          image: ubuntu-2204:2022.07.1
      steps:
         - checkout
-        - matlab/install:
-            release: R2023a
-            products: |
-              MATLAB
-              Optimization_Toolbox
-              Statistics_and_Machine_Learning_Toolbox
-              Parallel_Computing_Toolbox 
-        #- matlab/run-command:                   # previously `matlab -batch ...`   
-        #    command:  ./toolbox/runAllMyTestsFS.m    # run the testing script: the environment variable can be retrieved using 'var=getenv('CATEGORY_TO_TEST');'
-        - matlab/run-build:
-            tasks: test
+        - matlab/install
+         #   release: R2023a
+         #   products: |
+         #     MATLAB
+         #     Optimization_Toolbox
+         #     Statistics_and_Machine_Learning_Toolbox
+         #     Parallel_Computing_Toolbox 
+        - matlab/run-command:                   # previously `matlab -batch ...`   
+           command:  "./toolbox/runAllMyTestsFS.m"    # run the testing script: the environment variable can be retrieved using 'var=getenv('CATEGORY_TO_TEST');'
+        #- matlab/run-build:
+        #    tasks: test
         - store_test_results:
             path: ~/project/tests-<< parameters.q >>/toolbox/test-<< parameters.q >>-report/
 
